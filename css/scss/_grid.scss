@@ -1,0 +1,65 @@
+$cols:12;
+$gutter: 20px;
+$l-device: 1200px;
+$m-device: 760px;
+$s-device: 450px;
+
+//Box-sizing
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+// Mixin de midia-querie
+ 
+
+
+@mixin d($size){
+  @if $size == l{
+    @media screen  and (min-width: #{$l-device}){
+      @content;
+      
+      }
+    }
+  @else if $size == m{
+      @media screen and (min-width: #{$m-device}) and (max-width: #{$l-device -1}){
+      @content;
+        
+      }
+    }
+    @else if $size == s{
+      @media screen and (max-width: #{$-device -1}){
+      @content;
+        
+      }
+
+
+  }
+}
+
+  
+
+// Função do grid 
+
+@function grid ($col, $offset:false){
+  $width: $col / $cols + 100 + "%";
+  $result: calc( #{$width} - #{$gutter});
+  @if $offset == offset{
+    $gutter : $gutter /2 ;
+    $result: calc( #{$width} + #{$gutter});
+  }
+  @return $result;
+}
+
+// Classes de grid
+
+@for $i from 1 through $cols{ 
+  .grid-#{$i}{
+    width: grid($i);
+  }
+
+}
+
+// Mixin estrutura do grid
+
+

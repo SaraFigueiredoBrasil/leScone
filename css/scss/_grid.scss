@@ -62,4 +62,10 @@ $s-device: 450px;
 
 // Mixin estrutura do grid
 
+@mixin gridEstrutura{
+  float: left;
+  min-height: 1px;
+  margin-left: $gutter/2;
+  margin-right: $gutter/2;
 
+}

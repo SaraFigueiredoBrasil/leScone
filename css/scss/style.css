@@ -303,6 +303,27 @@ p {
   letter-spacing: -90px;
   color: #2a2426;
 }
+@media screen and (min-width: 760px) and (max-width: 1199px) {
+  .intro-telefone::after {
+    margin-top: 80px;
+    font-size: 160px;
+    letter-spacing: -70px;
+  }
+}
+@media screen and (max-width: 759px) {
+  .intro-telefone::after {
+    display: none;
+  }
+}
+
+.aberto {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #1fbb1f;
+  border-radius: 50%;
+  margin-left: 30px;
+}
 
 .intro-foto {
   border: 10px solid #988c77;
@@ -350,8 +371,7 @@ p {
     width: auto;
   }
 }
-
-img[class=prato] {
+.menu-item img.prato {
   border-radius: 50%;
   border: 10px solid #cbc6b9;
   position: absolute;
@@ -359,12 +379,12 @@ img[class=prato] {
   margin-top: 50px;
 }
 @media screen and (min-width: 1200px) {
-  img[class=prato] {
+  .menu-item img.prato {
     right: 120px;
   }
 }
 @media screen and (max-width: 759px) {
-  img[class=prato] {
+  .menu-item img.prato {
     width: 120px;
     margin-top: 0px;
   }
@@ -387,7 +407,7 @@ img[class=prato] {
   line-height: 1.6666666667em;
   display: block;
 }
-.contato form input[type=text] {
+.contato form input[type=text], .contato form textarea {
   font-family: "PT Mono", monospace;
   font-size: 1.125em;
   line-height: 1.6666666667em;
@@ -395,4 +415,11 @@ img[class=prato] {
   width: 100%;
   padding: 0 5px;
   height: 40px;
+  border: 2px solid #988c77;
+  background: transparent;
+  margin-top: 1em;
+}
+.contato form input[type=text]:hover, .contato form input[type=text]:focus, .contato form textarea:hover, .contato form textarea:focus {
+  outline: none;
+  border-color: #cbc6b9;
 }/*# sourceMappingURL=style.css.map */

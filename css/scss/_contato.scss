@@ -12,12 +12,22 @@
         display: block;
     }
 
-    input[type="text"]{
+    input[type="text"], textarea{
         @include tipo-1(18);
         color: $cinza;
         width: 100%;
         padding: 0 5px;
         height: 40px;
+        border: 2px solid $bege-escuro;
+        background: transparent;
+        margin-top: 1em;
+
+        &:hover, &:focus{
+            outline: none;
+            border-color: $bege-medio;
+        }
 
     }
+
+    textar
 }

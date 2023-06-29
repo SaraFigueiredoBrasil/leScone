@@ -28,24 +28,18 @@
         margin-bottom: 40px;
 
     }
-
-    &::after{
-        content: '/ / / /';
-        display: block;
-        margin-bottom: 200px;
-        font-size: 200px;
-        letter-spacing: -90;
-        color: $cinza;
-        @include d(m) {
-			margin-top: 80px;
-			font-size: 160px;
-			letter-spacing: -70px;
-		}
-		@include d(s) {
-			display: none;
-		}
-    }
+//REVISAR
+   /* &::after {
+		content: '/ / / /';
+		display: block;
+		margin-top: 200px;
+		font-size: 220px;
+		letter-spacing: -90px;
+		color: $cinza;
+		
+	}
 }
+
 .intro-foto{
     border: 10px solid $bege-escuro;
     width: 100%;

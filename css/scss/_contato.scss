@@ -45,5 +45,7 @@
         width: 200px;
         padding-top: 5px ;
 
+        @include box-shadow( 5px 5px 0 .2px)
+
 
     }

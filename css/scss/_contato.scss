@@ -28,3 +28,22 @@
         }
 
      }
+
+     textarea{
+        height:120px ;
+     }
+    }
+
+    input.button{
+        @include tipo-1(18);
+        cursor: pointer;
+        color: $bege-escuro;
+        text-transform: uppercase;
+        border: 2px solid $bege-escuro;
+        background: transparent;
+        display: block;
+        width: 200px;
+        padding-top: 5px ;
+
+
+    }
